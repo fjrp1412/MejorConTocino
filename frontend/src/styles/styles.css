@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+#app {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #252525;
+  padding: 50px 0px;
+
+}
