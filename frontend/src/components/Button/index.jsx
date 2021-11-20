@@ -8,6 +8,7 @@ const ButtonUI = styled.button`
   outline: none;
   overflow: hidden;
   cursor: pointer;
+  background-color: transparent;
 `;
 
 const Button = ({ children, handleClick }) => {

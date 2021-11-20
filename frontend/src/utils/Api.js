@@ -63,9 +63,25 @@ const deleteRestaurant = async id => {
   return { response };
 };
 
+const filterRestaurant = async ({ state, country, type, rating }) => {
+  const url = 'http://localhost:8000/api/restaurant/?';
+  const queryState = state ? `&state=${state}` : '';
+  const queryCountry = country ? `&country=${country}` : '';
+  const queryType = type ? `&type_food=${type}` : '';
+  const queryRating = rating ? `&rating=${rating}` : '';
+
+  const response = await fetch(
+    url + queryState + queryCountry + queryType + queryRating
+  );
+  const data = await response.json();
+
+  return { data };
+};
+
 export {
   getRestaurantList,
   postRestaurant,
   updateRestaurant,
   deleteRestaurant,
+  filterRestaurant,
 };
