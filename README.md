@@ -45,7 +45,7 @@ This project was made using Python and Js, splited into two directories, one for
  - localhost:8000/api/restaurant/?state=value ----> Also, the API accept query parameters to filter the result data. Can add all the model's attribute in query parameters 
 
  
- ## Genoma Instructions
+ ## Instructions
  ### Backend
  
  - The "Restaurant" model have **name, state, country, type food, rating, and visited** attributes
